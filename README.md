@@ -11,6 +11,7 @@ It helps record expenses, list them, calculate totals, and export to CSV.
 - List expenses in table format
 - Calculate total expenses
 - Export expenses to CSV
+- With a total balances of all your expenses
 - Node.js version includes a web UI with HTML + CSS
 
 ---
@@ -19,4 +20,5 @@ It helps record expenses, list them, calculate totals, and export to CSV.
 Run:
 
 ```bash
+
 python expense_tracker.py
