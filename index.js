@@ -35,7 +35,12 @@ app.get("/export", (req, res) => {
     res.download("expenses.csv");
 });
 
+app.get("/total", (req, res) => {
+    const total = expenses.reduce((sum, s) => sum + Number(s.amount), 0)
+    res.send(`Your Total Expenses Balance is ${total}`);
+});
 
 app.listen(port, () => {
     console.log(`listening on ${port}`)
+
 })
